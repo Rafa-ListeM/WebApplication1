@@ -6,7 +6,7 @@ namespace WebApplication1
 {
     public class Contexto : DbContext 
     {
-        public Contexto(DbContextOptions<Contexto> opt) : base(opt) 
+        public Contexto (DbContextOptions<Contexto> opt) : base(opt) 
         { }
 
         public DbSet<Produtos> Produtos { get; set; }
