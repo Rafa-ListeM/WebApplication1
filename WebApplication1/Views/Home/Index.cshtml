@@ -1,0 +1,15 @@
+﻿@model List<WebApplication1.Entidades.Produtos>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h1> Não esta aparecendo </h1>
+
+@foreach(var produto in Model){
+    <p> @produto.Descricao   - R$  @produto.Valor   </p>
+}
