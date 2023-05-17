@@ -32,10 +32,10 @@ namespace WebApplication1.Controllers
 
         public IActionResult Excluir(int id)
         {
-            Categoria item = contexto.Categorias.Find(id);
+            Categoria item = contexto.Categoria.Find(id);
             if (item != null)
             {
-                contexto.Categorias.Remove(item);
+                contexto.Categoria.Remove(item);
                 contexto.SaveChanges();
 
             }

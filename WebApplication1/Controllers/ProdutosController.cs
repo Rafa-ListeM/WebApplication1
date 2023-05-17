@@ -21,7 +21,7 @@ namespace WebApplication1.Controllers
         public IActionResult Cadastro()
         {
             NovoProdutoModelsView model = new NovoProdutoModelsView();
-            model.ListaCategorias = db.Categorias.ToList();
+            model.ListaCategorias = db.Categoria.ToList();
             return View();
         }
 
